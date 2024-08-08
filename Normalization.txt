@@ -1,0 +1,19 @@
+
+-- 1nf 
+
+No change
+________________________
+-- 2nf 
+
+
+Nochange
+________________________
+-- 3nf
+
+Orders(#Order_ID, Order_Date, Ship_Date, Customer_ID(fk), Territory_ID(fk) )
+Customer(#Customer_ID, Customer_Name, Segment)
+Territory(#Territory_ID, Teritory_Name, Territory_Group)
+Product(#Product_ID, Product_name, Category, Sub_category)
+Returns(#order_ID(fk))
+OrderProduct(#Order_ID(fk), #Product_ID(fk), Sales, Quantity, Discount, Profit, Status_ID(fk))
+Status(#Status_ID, Status_Name) 
